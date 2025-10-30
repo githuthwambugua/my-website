@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Nguo za Miguu</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function sendToWhatsApp() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      const fullMessage = `Hello, my name is ${name}. My email is ${email}. ${message}`;
+      const encodedMessage = encodeURIComponent(fullMessage);
+      const phoneNumber = "254799299563"; // your number in international format
+
+      window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
+    }
+  </script>
+</head>
+<body>
+  <header><h1>Nguo za Miguu</h1></header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>Want to order or ask something? Send us a message or chat directly on WhatsApp below.</p>
+
+    <form onsubmit="sendToWhatsApp(); return false;">
+      <input type="text" id="name" placeholder="Your Name" required><br><br>
+      <input type="email" id="email" placeholder="Your Email" required><br><br>
+      <textarea id="message" placeholder="Your Message" required></textarea><br><br>
+      <button type="submit">Send via WhatsApp</button>
+    </form>
+  </section>
+
+  <footer><p>&copy; 2025 Nguo za Miguu</p></footer>
+
+  <a href="https://wa.me/254799299563" class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+</html>
