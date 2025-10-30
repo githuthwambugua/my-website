@@ -27,7 +27,8 @@ nav a {
   display: inline-block;
 }
 
-nav a:hover {git border-start-end-radius: ;
+nav a:hover {
+  git: (border-start-end-radius);
   background: red;
 }
 
@@ -52,6 +53,11 @@ nav a:hover {git border-start-end-radius: ;
   transform: scale(1.05);
 }
 
+.container p{
+  font-size: large;
+  font-style: italic;
+}
+
 /* WhatsApp floating button */
 .whatsapp-btn {
   position: fixed;
@@ -65,4 +71,11 @@ nav a:hover {git border-start-end-radius: ;
   text-align: center;
   text-decoration: none;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+footer{
+  justify-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: line-through;
 }
